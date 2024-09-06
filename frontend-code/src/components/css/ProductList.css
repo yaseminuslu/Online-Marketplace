@@ -1,0 +1,191 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  width: 80%; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  justify-content: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-card h1 {
+  margin-top: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif; 
+  transition: color 0.3s;
+}
+
+.product-card h2 {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+.product-card h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card h6 {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: 'red';
+}
+
+.product-card button {
+  width: 130px;
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: rgb(41, 40, 40);
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-icon {
+  color: black;
+  font-size: 18px; /* İkon boyutunu ayarlamak için */
+}
+
+.icon-button:hover .button-icon {
+  color: white;
+}
+
+.no-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #555;
+}
+
+.no-products h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.no-products p {
+  font-size: 18px;
+  color: #777;
+}
+
+.no-products .go-back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-products .go-back-btn:hover {
+  background-color: #333;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.breadcrumb-item {
+  text-decoration: none;
+  color: #555;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.breadcrumb-item:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #555;
+  font-size: 18px;
+}
+
+.search-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+.search-bar input {
+  padding: 10px 40px 10px 15px; /* Sağ tarafta ikon için boşluk bırakır */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #F8F8F8;
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; /* Arama çubuğunun sağ köşesine hizalar */
+  top: 50%; /* Ortalar */
+  transform: translateY(-50%); /* Dikeyde ortalar */
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,103 @@
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 630px; /* Slider yüksekliği */
+  }
+
+  .slider {
+    width: 65%; /* Slider genişliği */
+    height: 100%;
+    overflow: hidden;
+    float: left; /* Slider'ı sola yaslar */
+    position: relative;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .slider img.active {
+    opacity: 1;
+  }
+  p {
+    font-family: "Playfair Display", serif;
+    margin: 10px ; /* Üst ve alt margin ekleyin, ihtiyaçlarınıza göre ayarlayın */
+    max-width: 80%; /* Yazının genişliğini sınırlayın, ekranın tamamını kaplamaması için */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* Dikey olarak ortalar */
+    right: 0; /* Sağ tarafa hizalar */
+    transform: translateY(-50%); /* Yükseklik olarak ortalar */
+    width: 40%; /* Yazı alanının genişliği */
+    height: 35%; /* Yazı alanının yüksekliği */
+    background: rgba(114, 105, 105, 0.5); /* Yarı saydam arka plan */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikey ortalama */
+    align-items: center; /* Yatay ortalama */
+    z-index: 10; /* Slider'ın üstünde görünmesini sağlar */
+  }
+  .btn-primary {
+    display: inline-block;
+    font-weight: 500; /* Yazı tipi kalınlığı */
+    font-size: 16px; /* Yazı tipi boyutu */
+    font-family: 'Montserrat', Arial, sans-serif; /* Yazı tipi ailesi */
+    letter-spacing: 0.1em; /* Harfler arası boşluk */
+    color: #D2C388;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    background-color: #FCFBF8;/* Arka plan rengi */
+    border-color: #D2C388; /* Kenar rengi */
+    text-decoration: none; /* Alt çizgi kaldırılır */
+  }
+  
+  /* Buton hover efekti */
+  .btn-primary:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #D2C388; /* Hover arka plan rengi */
+    border-color: #D2C388; /* Hover kenar rengi */
+  }
+  
+  /* Buton aktif durumunda stil */
+  .btn-primary:active {
+    background-color: #D2C388;
+    border-color: #D2C388;
+  }
+  
+  /* Buton odaklandığında stil */
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem #D2C388; /* Odaklanma gölgesi */
+  }
+  
+  /* Butonun disable (devre dışı) durumda olduğu stil */
+  .btn-primary:disabled, .btn-primary.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    background-color: #D2C388;
+    border-color: #D2C388;
+  }
+
+  .labelEditPage {
+    color:#D2C388;
+    font-weight: bold; /* Yazı tipi kalınlığı */
+    font-size: 16px; /* Yazı tipi boyutu */
+    font-family: 'Montserrat', Arial, sans-serif; /* Yazı tipi ailesi */
+    
+  }

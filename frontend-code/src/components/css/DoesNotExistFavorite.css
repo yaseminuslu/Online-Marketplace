@@ -1,0 +1,34 @@
+.no-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #555;
+  }
+  
+  .no-products h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .no-products p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .no-products .go-back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-products .go-back-btn:hover {
+    background-color: #333;
+  }

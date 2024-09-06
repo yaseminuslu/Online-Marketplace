@@ -1,0 +1,97 @@
+.seller .breadcrumb {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.seller .breadcrumb-item {
+  text-decoration: none;
+  color: #666;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.seller .breadcrumb-item:hover {
+  text-decoration: underline;
+}
+
+.seller .breadcrumb-current {
+  color: #222;
+  font-size: 18px;
+}
+
+.seller .seller-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.seller .seller-actions {
+  display: flex;
+  align-items: center;
+}
+
+.seller .seller-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.seller .seller-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 400px;
+  min-height: 150px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.seller .seller-card:hover {
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.seller .seller-card p {
+  margin: 10px 0;
+}
+
+.seller .seller-card strong {
+  color: #A6B37D;
+  font-weight: 800;
+}
+
+.seller .seller-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.seller .seller-action-icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.seller .seller-action-icon:hover {
+  color: #d9534f;
+  /* Silme işlemi için kırmızı renk */
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar .search-icon {
+  color: #777;
+  cursor: pointer;
+}

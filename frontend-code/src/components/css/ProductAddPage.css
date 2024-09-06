@@ -1,0 +1,93 @@
+.product-add-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product-add-card {
+  max-width: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.product-add-card:hover {
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-add-card-header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-add-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-add-form-group {
+  margin-bottom: 25px;
+}
+
+.product-add-input,
+.product-add-textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.product-add-input:focus,
+.product-add-textarea:focus {
+  outline: none;
+  border-color: #b7a66a;
+}
+
+.product-add-textarea {
+  height: 80px;
+}
+
+.product-add-dropzone {
+  padding: 20px;
+  border: 2px dashed #abb1b8;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  color: #889199;
+}
+
+.product-add-button {
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #b7a66a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-add-button:hover {
+  background-color: #9b8d52;
+}
+
+.product-add-error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}

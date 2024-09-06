@@ -1,0 +1,130 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.breadcrumb-item {
+  text-decoration: none;
+  color: #666;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.breadcrumb-item:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #222;
+  font-size: 18px;
+}
+
+.our-team {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  height: 50vh;
+}
+
+.our-team:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.our-team .picture {
+  background-color: #C0C78C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  font-size: 1em;
+  color: #ffffff;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.our-team .picture:hover {
+  background-color: #C0C78C;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #C0C78C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.our-team .titleOne {
+  font-size: 22px;
+  color: #444;
+  margin: 10px 0;
+}
+.our-team .title {
+  font-size: 15px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.our-team .social {
+  color: #ffffff;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #A6B37D;
+  position: absolute;
+  bottom: -16px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border-radius: 0 0 10px 10px;
+  left: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.our-team .social li a:hover {
+  background-color: #B99470;
+  color: #ffffff;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar .search-icon {
+  color: #777;
+  cursor: pointer;}

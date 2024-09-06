@@ -1,0 +1,103 @@
+.user-add-body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-add-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: calc(100vh - 20vh);
+}
+
+.user-add-card {
+  max-width: 700px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.user-add-card:hover {
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+}
+
+.user-add-card-header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-add-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-add-form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.user-add-form-group label {
+  font-size: 16px;
+  color: #444;
+  width: 150px;
+  line-height: 2.5; /* Vertically centers label */
+}
+
+.user-add-input {
+  padding: 12px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 40px; /* Adjusted height to match the label's line height */
+  transition: border-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.user-add-input:focus {
+  outline: none;
+  border-color: #b7a66a;
+}
+
+.user-add-button {
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #b7a66a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-add-button:hover {
+  background-color: #9b8d52;
+}
+
+.user-add-error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
